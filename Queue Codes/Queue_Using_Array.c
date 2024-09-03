@@ -47,6 +47,7 @@ void main(){
 void enqueue(){
     if(rear == MAX - 1){
         printf("Overflow\n");
+        return;
     }
     else{
         if(front==-1){
