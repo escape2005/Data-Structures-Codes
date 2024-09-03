@@ -28,6 +28,7 @@ void pop()
     if(top == NULL)
     {
         printf("\nStack underflow");
+        return;
     }
     temp =  top;
     top = top->next;
@@ -36,6 +37,11 @@ void pop()
 }
  void display()
  {
+     if(top == NULL)
+    {                            
+        printf("\nStack is Empty");
+        return;
+    }
      struct node *temp;
      temp = top;
      while(temp != NULL)
